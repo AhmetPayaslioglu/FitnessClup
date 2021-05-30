@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Products</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+     <link rel="preconnect" href="https://fonts.gstatic.com"> 
+
+     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>     
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css">
+     
+
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("/photo/adult-1850925_1920.jpg"); }
+.img2 { background-image: url("/photo/fitness-863081_1920.jpg"); }
+.img3 { background-image: url("/photo/man-1282232_1920.jpg"); }
+.img4 { background-image: url("/photo/men-1245982_1920.jpg"); }
+.img5 { background-image: url("/photo/pexels-cottonbro-4761663.jpg"); }
+.img6 { background-image: url("/photo/swim-864383_1920.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #f1f1f1;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+      
+      /* general styling */
+       /* * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      } */
+      
+      /* html, body {
+        height: 100%;
+        margin: 0;
+      }  */
+      
+      .body {
+        /* align-items: center; */
+        font-family: -apple-system, 
+          BlinkMacSystemFont, 
+          "Segoe UI", 
+          Roboto, 
+          Oxygen-Sans, 
+          Ubuntu, 
+          Cantarell, 
+          "Helvetica Neue", 
+          sans-serif;
+      }
+      
+      .container {
+        margin: 0 auto;
+        /* text-align: center; */
+      }
+      
+      .h2 {
+        font-weight: normal;
+        text-align: center;
+        letter-spacing: .100rem;
+        text-transform: uppercase;
+        margin-top: 10rem;
+      }
+      
+      .li {
+        display: inline-block;
+        text-align: center;
+        font-size: 1em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+      }
+      
+      .li span {
+        display: block;
+        font-size: 4.5rem;
+      }
+      
+      .message {
+        font-size: 4rem;
+        display: none;
+        padding: 1rem;
+      }
+      
+      .center{
+        text-align: center;
+        margin-right: 1rem;
+      }
+      
+      
+      
+         </style>
+  </head>
+
+ <body id="page-top" class="bg-image img4">
+      <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" style="font-family: 'Yellowtail', cursive; font-size:x-large;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand js-scroll-trigger ak">Fitness Club</a>
+            
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto text-light">
+                    <li class="nav-item mx-0 mx-lg-1 "><a href="about.html" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger ak">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1 "><a href="gallery.html" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger ak">Products</a></li>
+                    <li class="nav-item mx-0 mx-lg-1 "><a href="contact.html" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger ak">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      <header class="masthead text-light bg-image img4 text-center mb-5" style="padding-bottom: auto ;">
+        <div class="container d-flex align-items-center flex-column mt-xl-5 pt-5 pb-5">
+     
+      <div class="container body">
+        
+        <button class="btn btn-success" style="margin-top: 10rem;" type="button" onclick="document.getElementById('timee').innerHTML = Date()">Show The Time..</button>
+        <p id="timee"></p>
+        <h1 id="headline" class="h2">Best deal ending soon..</h1>
+        <div id="countdown" class="center">
+          <ul>
+            <li class="li"><span id="days"></span>days</li>
+            <li class="li"><span id="hours"></span>Hours</li>
+            <li class="li"><span id="minutes"></span>Minutes</li>
+            <li class="li"><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+
+<script src="shoppingcard.js"></script>
+      <div class=" container portfolio-padding">
+
+          <h2 class="text-center text-uppercase text-warning m-4  " style="font-size:3rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> Products</h2>
+
+        <div class="row d-inline">
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+            <button class="clear-cart btn btn-danger ">Clear Cart</button>
+        </div>
+
+          <div class="row justify-content-center mb-3" style="display: flex;">
+            
+            <div class="card card-box-sizing m-4 border-primary border" style="width: 18rem;">
+                <img src="images/cabin.png" alt="cabin" class="card-img-top" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Protein Powder</h5>
+                            <p class="card-text">
+                              Protein is an essential macronutrient that helps build muscle, repair tissue, and make enzymes and hormones.</p>
+                             <a href="#" class="btn btn-danger add-to-cart" data-name="Artwork-1" data-price="1">Add Shopping Card</a>
+                    </div> 
+            </div>
+
+            <div class="card card-box-sizing m-4 border-primary border" style="width: 18rem;">
+                <img src="images/cake.png" alt="cabin" class="card-img-top" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">L-Carnitine</h5>
+                            <p class="card-text">
+                              L-carnitine helps the body produce energy. It is important for heart and brain function, muscle movement, and many other body processes.</p>
+                             <a href="#" class="btn btn-danger add-to-cart" data-name="Artwork-2" data-price="1.5" >Add Shopping Card</a>
+                    </div> 
+            </div>
+
+            <div class="card card-box-sizing m-4 border-primary border" style="width: 18rem;">
+                <img src="images/circus.png" alt="cabin" class="card-img-top" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Amino Acid</h5>
+                            <p class="card-text">
+                              Amino acids and proteins are the building blocks of life. When proteins are digested or broken down, amino acids are left.</p>
+                             <a href="#" class="btn btn-danger add-to-cart" data-name="Artwork-3" data-price="2">Add Shopping Card</a>
+                    </div> 
+            </div>
+
+            <div class="card card-box-sizing m-4 border-primary border" style="width: 18rem;">
+                <img src="images/game.png" alt="cabin" class="card-img-top" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Creatine</h5>
+                            <p class="card-text">
+                              Creatine is thought to improve strength, increase lean muscle mass, and help the muscles recover more quickly during exercise.</p>
+                             <a href="#" class="btn btn-danger add-to-cart" data-name="Artwork-4" data-price="2.5">Add Shopping Card</a>
+                    </div> 
+            </div>
+
+            <div class="card card-box-sizing m-4 border-primary border" style="width: 18rem;">
+                <img src="images/safe.png" alt="cabin" class="card-img-top" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Power And Performance</h5>
+                            <p class="card-text">
+                              Power Performance Products is proud to bring you the world’s finest Pre Workout Supplements you can buy.</p>
+                             <a href="#" class="btn btn-danger add-to-cart" data-name="Artwork-5" data-price="4.5">Add Shopping Card</a>
+                    </div> 
+            </div>
+
+            <div class="card card-box-sizing m-4 border-primary border" style="width: 18rem;">
+                <img src="images/submarine.png" alt="cabin" class="card-img-top" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Weight Gainer</h5>
+                            <p class="card-text">
+                              Weight gainers are high-calorie products that contain large amounts of carbohydrates and protein. These products can help you gain weight if added to your normal diet</p>
+                             <a href="#" class="btn btn-danger add-to-cart" data-name="Artwork-6" data-price="2"> Add Shopping Card </a>
+                    </div> 
+            </div>
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order now</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+        </div>
+
+        <script>
+            var shoppingCart = (function() {
+  // =============================
+  // Private methods and propeties
+  // =============================
+  cart = [];
+  
+  // Constructor
+  function Item(name, price, count) {
+    this.name = name;
+    this.price = price;
+    this.count = count;
+  }
+  
+  // Save cart
+  function saveCart() {
+    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+  
+    // Load cart
+  function loadCart() {
+    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+    loadCart();
+  }
+  
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+  
+  // Add to cart
+  obj.addItemToCart = function(name, price, count) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(name, price, count);
+    cart.push(item);
+    saveCart();
+  }
+  // Set count from item
+  obj.setCountForItem = function(name, count) {
+    for(var i in cart) {
+      if (cart[i].name === name) {
+        cart[i].count = count;
+        break;
+      }
+    }
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count --;
+          if(cart[item].count === 0) {
+            cart.splice(item, 1);
+          }
+          break;
+        }
+    }
+    saveCart();
+  }
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
+
+  // Clear cart
+  obj.clearCart = function() {
+    cart = [];
+    saveCart();
+  }
+
+  // Count cart 
+  obj.totalCount = function() {
+    var totalCount = 0;
+    for(var item in cart) {
+      totalCount += cart[item].count;
+    }
+    return totalCount;
+  }
+
+  // Total cart
+  obj.totalCart = function() {
+    var totalCart = 0;
+    for(var item in cart) {
+      totalCart += cart[item].price * cart[item].count;
+    }
+    return Number(totalCart.toFixed(2));
+  }
+
+  // List cart
+  obj.listCart = function() {
+    var cartCopy = [];
+    for(i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for(p in item) {
+        itemCopy[p] = item[p];
+
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+    }
+    return cartCopy;
+  }
+
+  // cart : Array
+  // Item : Object/Class
+  // addItemToCart : Function
+  // removeItemFromCart : Function
+  // removeItemFromCartAll : Function
+  // clearCart : Function
+  // countCart : Function
+  // totalCart : Function
+  // listCart : Function
+  // saveCart : Function
+  // loadCart : Function
+  return obj;
+})();
+
+
+// *****************************************
+// Triggers / Events
+// ***************************************** 
+// Add item
+$('.add-to-cart').click(function(event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  var price = Number($(this).data('price'));
+  shoppingCart.addItemToCart(name, price, 1);
+  displayCart();
+});
+
+// Clear items
+$('.clear-cart').click(function() {
+  shoppingCart.clearCart();
+  displayCart();
+});
+
+
+function displayCart() {
+  var cartArray = shoppingCart.listCart();
+  var output = "";
+  for(var i in cartArray) {
+    output += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>" 
+      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+      + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + " = " 
+      + "<td>" + cartArray[i].total + "</td>" 
+      +  "</tr>";
+  }
+  $('.show-cart').html(output);
+  $('.total-cart').html(shoppingCart.totalCart());
+  $('.total-count').html(shoppingCart.totalCount());
+}
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
+
+// -1
+$('.show-cart').on("click", ".minus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCart(name);
+  displayCart();
+})
+// +1
+$('.show-cart').on("click", ".plus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.addItemToCart(name);
+  displayCart();
+})
+
+// Item count input
+$('.show-cart').on("change", ".item-count", function(event) {
+   var name = $(this).data('name');
+   var count = Number($(this).val());
+  shoppingCart.setCountForItem(name, count);
+  displayCart();
+});
+
+displayCart();
+
+        </script>
+        
+        <script>
+          (function () {
+      const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+      // You can set ending time 
+      let birthday = "May 30, 2021 00:00:00",
+          countDown = new Date(birthday).getTime(),
+          x = setInterval(function() {    
+    
+            let now = new Date().getTime(),
+                distance = countDown - now;
+    
+            document.getElementById("days").innerText = Math.floor(distance / (day)),
+              document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+              document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+              document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+    
+            //do something later when date is reached
+            if (distance < 0) {
+              let headline = document.getElementById("headline"),
+                  countdown = document.getElementById("countdown"),
+                  content = document.getElementById("content");
+    
+              headline.innerText = "The Deal Is Finished.. :(";
+              countdown.style.display = "none";
+              content.style.display = "block";
+    
+              clearInterval(x);
+            }
+            //seconds
+          }, 0)
+      }());
+        </script>
+
+      </div>
+
+    <footer class="footer bg-dark text-center text-light">
+          <div class="container py-4 ">
+            <div class="row">
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Kongresni trg 12
+                        <br>
+                        1000 Ljubljana
+                    </p>
+                </div>
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Social Media</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-dribbble"></i></a>
+                </div>
+
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About Us</h4>
+                    <p class="lead mb-0">
+                      Since 1971, we've been the brand customers turn to on their journey to good health. Find out why.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+      </footer>
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
