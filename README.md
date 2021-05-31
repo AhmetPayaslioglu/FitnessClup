@@ -4,4 +4,4 @@ I created a basic Fitness e-commercial website. I finished the Frontend step. If
 # Video
 Click to see full video in YOUTUBE !
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pz5Jsm5O6dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
