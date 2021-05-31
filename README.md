@@ -3,4 +3,5 @@ I created a basic Fitness e-commercial website. I finished the Frontend step. If
 
 # Video
 Click to see full video in YOUTUBE !
-[![Alt text](https://img.youtube.com/vi/L2WLuun-RHA/0.jpg)](https://youtu.be/Pz5Jsm5O6dc)
+
+[![Alt text](https://img.youtube.com/vi/Pz5Jsm5O6dc.jpg)](https://youtu.be/Pz5Jsm5O6dc)
